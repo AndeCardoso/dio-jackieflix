@@ -1,0 +1,93 @@
+:root {
+    --vermelho: #EE1C25;
+    --dourado: #FFFF00;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--preto);
+    color: cornsilk;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+header .logo .j {
+    color: var(--dourado);
+}
+
+header nav a {
+    text-decoration: none;
+    color: cornsilk;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: white;
+    font-weight: bold
+}
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0, 0.354)100%), url('../img/capa-jackiechan.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filme-principal .button {
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0,.50);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.filme-principal .button:hover {
+    background-color: white;
+    color: black;
+}
+
+.filme-principal .button i {
+    margin-right: 15px;
+}
+
+/* parei na parte 6 do projeto */

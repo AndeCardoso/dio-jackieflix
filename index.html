@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7f837b1c17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>JCHANFLIX</title>
+    <link rel="stylesheet" href="./css/hamburguer-menu.css">
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
+    <link rel="sortcut icon" href="./img/jackie-icon.png" type="image/x-icon" />
+    <title>JACKIEFLIX</title>
 </head>
 <body>
     <header>
         <div class="container">
             <h2 class="logo">
-                <span class="j">J.</span>CHANFLIX
+                <span class="j">JACKIE</span>FLIX
             </h2>
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu">
+                        <nav class="menu-items">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Filmes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Séries</a>
+                                </li>
+                                <li>
+                                    <a href="#">Documentários</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
             <nav>
-                <a href="#">HOME</a>
+                <a href="#">Home</a>
                 <a href="#">Filmes</a>
                 <a href="#">Séries</a>
                 <a href="#">Documentários</a>
@@ -27,29 +64,67 @@
             <div class="container">
                 <h2 class="titulo">Detonando em Barcelona (1984)</h2>
                 <p class="descricao">
-                    Thomas (Jackie Chan) e David (Yuen Biao), ganham a vida vendendo lanches em uma van na linda cidade de Barcelona, 
-                    na Espanha. Eles se unem a Moby (Sammo Hung), um atrapalhado detetive para ajudá-lo a encontrar uma misteriosa
-                    batedora de carteiras, conhecida como Silvia (Lola Forner). Quando descobrem que ela foi seqüestrada por uma 
-                    gangue de mafiosos, mergulham na ação e "botam pra quebrar" detonando os bandidos em muitas lutas sensacionais. 
                     Este filme é certeza de diversão e ação sem parar. O confronto entre Jackie e Benny "The Jet" Urquidez, foi 
                     classificada pela revista "Inside Kung-Fu", como "Uma das Maiores Lutas de Todos os Tempos".
                 </p>
                 <div class="buttons">
-                    <button role="button" class="button">
-                        <i class="fas fa-play-circle"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="button">
-                        <i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                        
-                    </button>
+                    <a href="pages/player.html" target="_blank">
+                        <button role="button" class="button">
+                                <i class="fas fa-play-circle"></i>
+                                ASSISTIR AGORA
+                        </button>
+                    </a>
+                    <a href="pages/details.html" target="_blank">
+                        <button role="button" class="button">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="carrosel-filmes">
+            <h3 class="topic-carrosel">Top 10 SESSÃO DA TARDE</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa1.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa2.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa3.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa4.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa5.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa6.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa7.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa8.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa9.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa10.jpg"></img></a></div>
+            </div>
+        </div>
+        <div class="carrosel-filmes">
+            <h3 class="topic-carrosel">Top 10 Antigueiras</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa11.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa12.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa13.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa14.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa15.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa16.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa17.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa18.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa19.jpg"></img></a></div>
+                <div class="item"><a href="#"><img class="box-filme" src="./img/carousel/capa20.jpg"></img></a></div>
+            </div>
+        </div>
     </main>
+    
     <footer>
-
+        <div class="foot">
+            <h4><span>“A vida sempre vai nos derrubar, mas somos nós que escolhemos se queremos ficar em pé ou não”.</span> CHAN, Jackie</h4>
+        </div>
     </footer>
+
+    <script class="box-filme" src="https://kit.fontawesome.com/7f837b1c17.js" crossorigin="anonymous"></script>
+    <script class="box-filme" src="js/owl/jquery.min.js"></script>
+    <script class="box-filme" src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
 </body>
 </html>

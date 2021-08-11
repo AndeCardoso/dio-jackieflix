@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root {
     --vermelho: #EE1C25;
     --dourado: #FFFF00;
@@ -11,9 +13,9 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--preto);
-    color: cornsilk;
+    color: rgb(255, 255, 255);
 }
 
 header .container {
@@ -21,13 +23,16 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    background-color: black;
 }
 
 header .logo {
-    margin-left: 5px;
     color: var(--vermelho);
-    font-family: fantasy;
-    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 header .logo .j {
@@ -36,13 +41,24 @@ header .logo .j {
 
 header nav a {
     text-decoration: none;
-    color: cornsilk;
+    color: rgb(192, 192, 192);
     margin-right: 10px;
+    font-size: 14pt;
 }
 
 header nav a:hover {
     color: white;
-    font-weight: bold
+}
+
+/* menu hamburguer hidden */
+
+.menu {
+    visibility: hidden;
+    display: none;
+}
+.checkbox-wrapper input {
+    visibility: hidden;
+    display: none;
 }
 
 /* filme principal */
@@ -58,15 +74,24 @@ header nav a:hover {
     align-items: flex-start;
 }
 
+.filme-principal .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 30px;
+    width: 50%;
+}
+
 .filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
 .filme-principal .titulo {
-    margin-top: 20%;
-    font-size: 40px;
+    margin-top: 23%;
+    font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .filme-principal .button {
@@ -76,6 +101,7 @@ header nav a:hover {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
     border: none;
+    margin-top: 15px;
     margin-right: 15px;
     cursor: pointer;
     transition: .3s ease all;
@@ -90,4 +116,33 @@ header nav a:hover {
     margin-right: 15px;
 }
 
-/* parei na parte 6 do projeto */
+.carrosel-filmes {
+    padding: 5px;
+}
+
+.carrosel-filmes .topic-carrosel {
+    padding: 15px;
+    font-size: 20pt;
+    text-transform: uppercase;
+    color: rgb(176, 176, 176);
+}
+
+.carrosel-filmes .box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+}
+
+.foot span {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}

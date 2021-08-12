@@ -6,4 +6,3 @@ Foram implementadas as paginas:
 - Detalhes com especificações do filme principal da page.
 - Player com filme principal no Youtube.
 - Adição de menu-hamburguer em resoluções pequenas.
-- Player com filme principal no Youtube

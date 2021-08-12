@@ -31,6 +31,13 @@
         display: none;
     }
 
+    .menu {
+        visibility: visible;
+    }
+    .checkbox-wrapper input {
+        visibility: visible;
+    }
+
     /* menu hamburguer */
 
     .checkbox-conatiner {
@@ -39,23 +46,24 @@
         align-items: center;
     }
     .checkbox {
-        height: 60px;
-        width: 60px;
+        height: 100px;
+        width: 100px;
+        position: absolute;
         right: 0;
         top: 0;
         display: flex;
         justify-content: center;
         cursor: pointer;
         z-index: 9999;
-        transition: 400ms ease all;
+        transition: 400ms ease-in-out;
     }
     .checkbox .trace {
         width: 50px;
-        height: 3px;
-        background-color: rgb(192, 192, 192);
+        height: 2px;
+        background-color: #ffffff;
         position: absolute;
         border-radius: 4px;
-        transition: 0.5s ease all;
+        transition: 0.5s ease-in-out;
     }
     .checkbox .trace:nth-child(1) {
         top:26px;
@@ -77,13 +85,14 @@
     
     .menu {
         position: absolute;
-        top: 10px;
+        top: 28px;
         right: 30px;
         background-color: transparent;
         height: 4px;
         width: 10px;
+        text-align: center;
         border-radius: 50%;
-        box-shadow:  0px 0px 0px 0px var(--preto);
+        box-shadow:  0px 0px 0px 0px #ffffff;
         z-index: -1;
         transition: 400ms ease all 0s;
     }
@@ -92,27 +101,29 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 2;
-        opacity: 0;
-        visibility: visible;
-        transition: 400ms ease-in-out 0s;
+        visibility: hidden;
+        transition: 600ms ease all 0s;
     }
     .menu-items ul {
         list-style-type: none;
     }
+
+    .menu-items li {
+        margin: 15px;
+    }
     
     .menu-items ul li a {
         margin: 10px;
-        color: white;
+        color: #ffffff;
         text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 4px;
         font-size: 40px;
+        visibility: visible;
     }
     
     /* Menu Hamburguer Animation */
@@ -120,7 +131,7 @@
     #toggle:checked + .checkbox .trace:nth-child(1) {
         transform: rotate(-45deg);
         top: 47px;
-        background-color: white;
+        background-color: #ffffff;
     }
     #toggle:checked + .checkbox .trace:nth-child(2) {
         transform: scale(0);
@@ -131,7 +142,7 @@
     #toggle:checked + .checkbox .trace:nth-child(3) {
         transform: rotate(45deg);
         top: 48px;
-        background-color: white;
+        background-color: #ffffff;
     }
     
     #toggle:checked + .checkbox {
